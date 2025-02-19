@@ -35,7 +35,7 @@ pico_sdk_init()
 
 # Add executable. Default name is the project name, version 0.1
 
-add_executable(Atividade_1002 Atividade_1002.c )
+add_executable(Atividade_1002 Atividade_1002.c inc/ssd1306.c)
 
 pico_set_program_name(Atividade_1002 "Atividade_1002")
 pico_set_program_version(Atividade_1002 "0.1")
@@ -55,7 +55,8 @@ target_include_directories(Atividade_1002 PRIVATE
 
 # Add any user requested libraries
 target_link_libraries(Atividade_1002 
-        
+        hardware_i2c
+        hardware_pio
         )
 
 pico_add_extra_outputs(Atividade_1002)
