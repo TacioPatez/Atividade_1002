@@ -55,6 +55,8 @@ target_include_directories(Atividade_1002 PRIVATE
 
 # Add any user requested libraries
 target_link_libraries(Atividade_1002 
+        hardware_adc 
+        hardware_pwm
         hardware_i2c
         hardware_pio
         )
