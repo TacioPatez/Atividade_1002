@@ -136,6 +136,6 @@ int main()
             ssd1306_draw_char(&ssd, 'O', point_x, point_y);
             ssd1306_send_data(&ssd);
         }
-        sleep_ms(1000);
+        sleep_ms(100);
     }
 }
